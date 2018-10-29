@@ -1,0 +1,106 @@
+/* CONTAINERS */
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.square {
+  width: 600px;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.square-2 {
+  height: 220px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+  display: flex;
+}
+
+/* BACKGROUND COLORS */
+
+.yellow-bg {
+  background-color: yellow;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+.blue-bg {
+  background-color: blue;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+/* SHAPE DIMENSIONS */
+.shape-1 {
+  width: 2%;
+}
+.shape-2 {
+  width: 15%;
+}
+.shape-3 {
+  width: 34.2%;
+}
+.shape-4 {
+  width: 40%;
+}
+.shape-5 {
+  width: 14%;
+}
+.shape-6 {
+  width: 24%;
+}
+.shape-7 {
+  width: 51%;
+}
+
+.shape-8 {
+  width: 25.1%;
+}
+
+/* PROPERTIES */
+
+.row:not(:last-child) {
+  border-bottom: 15px black solid
+}
+
+.row:nth-child(1) {
+ height: 27.5%;
+}
+
+.row:nth-child(2) {
+  height: 31%;
+}
+
+.square-2 .row:nth-child(1) {
+  height: 50%;
+}
+
+.square-2 .row:nth-child(2) {
+  height: 50%;
+}
+
+.row div:not(:last-child) {
+  border-right: 15px black solid;
+}
+
+.row div:last-child {
+  border-right: 8px black solid;
+}
+
+.square-2 .row:nth-child(2) .shape-8 {
+  border-right-style: none;
+}
